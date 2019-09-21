@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on linux)" generated="20190921 16:11:22.241" rpa="false">
+<suite id="s1" name="ImplictWaitTests" source="/home/dust/Project/PycharmProjects/selenium-rb-framework/TestCases/ImplictWaitTests.robot">
+<test id="s1-t1" name="RegTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190921 16:11:22.390" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20190921 16:11:22.390" endtime="20190921 16:11:28.846"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190921 16:11:28.847" endtime="20190921 16:11:29.003"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190921 16:11:29.004" endtime="20190921 16:11:29.006"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>Gender</arg>
+<arg>M</arg>
+</arguments>
+<msg timestamp="20190921 16:11:29.006" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20190921 16:11:29.006" endtime="20190921 16:11:29.286"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:FirstName1</arg>
+<arg>Dust</arg>
+</arguments>
+<msg timestamp="20190921 16:11:29.286" level="INFO">Typing text 'Dust' into text field 'name:FirstName1'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190921 16:12:34.348" level="FAIL">TimeoutException: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=77.0.3865.75)
+</msg>
+<status status="FAIL" starttime="20190921 16:11:34.318" endtime="20190921 16:12:34.348"></status>
+</kw>
+<msg timestamp="20190921 16:12:34.348" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: TimeoutException: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=77.0.3865.75)
+</msg>
+<msg timestamp="20190921 16:12:34.349" level="FAIL">Element with locator 'name:FirstName1' not found.</msg>
+<status status="FAIL" starttime="20190921 16:11:29.286" endtime="20190921 16:12:34.349"></status>
+</kw>
+<status status="FAIL" starttime="20190921 16:11:22.389" endtime="20190921 16:12:34.349" critical="yes">Element with locator 'name:FirstName1' not found.</status>
+</test>
+<status status="FAIL" starttime="20190921 16:11:22.241" endtime="20190921 16:12:34.350"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="ImplictWaitTests">ImplictWaitTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190921 16:12:34.348" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: TimeoutException: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=77.0.3865.75)
+</msg>
+</errors>
+</robot>
